@@ -1,0 +1,32 @@
+{
+	"network": {
+		"lan": {
+			"ifname": "eth0",
+			"create_vlan": true,
+			"macaddr": "00:ca:2f:04:01:32"
+		},
+		"wan": {
+			"ifname": "eth0",
+			"create_vlan": true,
+			"macaddr": "00:ca:2f:04:01:33"
+		}
+	},
+	"switch": {
+		"switch0": {
+			"enable": true,
+			"reset": true,
+			"vlans": {
+				"lan": [
+					0,
+					1,
+					2,
+					3
+				],
+				"wan": [
+					4
+				]
+			},
+			"cpu_port": 6
+		}
+	}
+}

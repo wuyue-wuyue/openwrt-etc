@@ -1,0 +1,20 @@
+config wifi-device  ra0
+	option type     ralink
+	option mode 	9
+	option channel  8
+	option txpower  17
+	option ht 	20
+	option country US
+	
+config wifi-iface
+	option device   ra0
+	option network	'lan'
+	option mode     'ap'
+	option ssid     ZhuoTK_0132
+	option encryption 'none'
+        option ApCliEnable '1'
+        option ApCliSsid '9306'
+        option ApCliAuthMode 'WPA2PSK'
+        option ApCliEncrypType 'AES'
+        option ApCliPassWord '930693069306'
+	

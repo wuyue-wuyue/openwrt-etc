@@ -1,0 +1,5 @@
+
+
+config interface 'wulala'
+	option user 'user'
+	option pass 'password'
